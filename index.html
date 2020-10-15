@@ -4,66 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
+
   <!-- Разметка барбер шопа -->
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Услуги и цены</a></li>
-          <li><a href="#">Мастера</a></li>
-          <li><a href="#">Контакты</a></li>
+    <header class="header">
+      <div class="logo"><img src="./pictures/logo.png" alt="logo"></div>
+      <nav class="navigation">
+        <ul class="list">
+          <li class="list-item"><a href="#" class="list-link">О нас</a></li>
+          <li class="list-item"><a href="#" class="list-link">Услуги и цены</a></li>
+          <li class="list-item"><a href="#" class="list-link">Мастера</a></li>
+          <li class="list-item"><a href="#" class="list-link">Контакты</a></li>
         </ul>
       </nav>
 
-      <address>
-        <a href="tel:+11111111">+11111111</a>
+      <address class="adr">
+        <a href="tel:+380441111111" class="phone">+38 044 111 11 11</a>
       </address>
 
-      <a href="#">Онлайн запись</a>
+      <a href="#" class="subscribe-btn">Онлайн запись</a>
     </header>
 
     <main>
-      <section>
-        <span>A hair salon for men in Kyiv</span>
-        <h1>BarberShop</h1>
-        <p>
+      <section class="hero">
+        <p class="hero-title">A hair salon for men in Kyiv</p>
+        <h1 class="main-title">BarberShop</h1>
+        <p class="hero-text">
           Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
           вкусом.
         </p>
       </section>
+
       <!-- о нас -->
-      <section>
-        <div>
-          <img
-            src="./pictures/img1.jpg"
-            alt="Мажет пеной"
-            width="270"
-            height="445"
-          />
-          <img
-            src="./pictures/img2.jpg"
-            alt="Бреет затылок"
-            width="270"
-            height="445"
-          />
-        </div>
-        <div>
-          <span>О НАС</span>
-          <h3>Лучший Барбершоп твоего города</h3>
-          <p>
+      <section class="about-us">
+        <ul>
+          <li>
+            <img src="./pictures/img1.jpg" alt="Мажет пеной" width="270" height="445">
+          </li>
+          <li>
+            <img src="./pictures/img2.jpg" alt="Бреет затылок" width="270" height="445" />
+          </li>
+        </ul>
+        <div class="about-block">
+          <p class="about-block-title">О НАС</p>
+          <h2 class="about-block-main-title">Лучший Барбершоп твоего города</h2>
+          <p class="about-text text-first">
             Если ты хочешь добавить в свой образ больше уверенности – тебе точно
             к нам.
           </p>
-          <p>
+          <p class="about-text text-second">
             Мы команда, которая никогда не останавливается на достигнутом и
             жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
             никогда не сможешь быть прежним. Мы команда, которая всегда с
             клиентами "на одной волне". Поэтому, мы всегда готовы
             усовершенствовать каждого, кто к нам приходит!
           </p>
-          <a href="#">онлайн-запись</a>
+          <a href="#" class="subscribe-btn">Онлайн запись</a>
         </div>
       </section>
       <!-- Услуги цены -->
@@ -226,6 +227,6 @@
           <li><a href="#">Youtube</a></li>
         </ul>
       </section>
-    </footer>
+    </footer> -->
   </body>
 </html>

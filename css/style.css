@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --accent-color: #FF6C00;
+    --main-font: Open Sans, sans-serif;
+    --second-font: Raleway, sans-serif;
+
+}
+
+.header{
+    background: #000;
+}
+
+.logo{
+    background: #ffffff;
+}
+
+.navigation .list-link{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navigation .list-link:hover{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    color: var(--accent-color);
+    letter-spacing: 0.1em;
+}
+
+.adr .phone{
+    display: inline-block;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 12px 20px;
+    text-align: center;
+    min-width: 160px;
+
+}
+
+.adr .phone:hover,
+.adr .phone:focus{
+    display: inline-block;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+    padding: 12px 20px;
+    text-align: center;
+    min-width: 160px;
+}
+
+.subscribe-btn{
+    display: inline-block;
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 12px 20px;
+    text-align: center;
+    min-width: 160px;
+
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus{
+    display: inline-block;
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+    padding: 12px 20px;
+    text-align: center;
+    min-width: 160px;
+
+}
+
+/* Герой */
+ .hero{
+    background: #000; 
+}
+
+.hero .hero-title{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.6);
+}
+
+/* какая-то тире перед нашим эллементом */
+.hero .hero-title::before{
+    content: '---';
+    color: red;
+}
+
+.hero .hero-text{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+
+.hero .main-title{
+    font-family: var(--second-font);
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+/* about us */
+.about-us{
+    background: skyblue;
+}
+
+.about-block-title{
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #303030;
+}
+
+.about-block-main-title{
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: #303030;
+}
+
+.about-text{
+    font-family: var(--main-font);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #555555;
+}
+
+.about-us .about-text-one{
+    font-size: 18px;
+    line-height: 1.67;
+}
+
+.about-us .about-text-second{
+    font-size: 14px;
+    line-height: 1.86;
+}
