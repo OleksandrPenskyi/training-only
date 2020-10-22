@@ -1,194 +1,201 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* цвет основного текста #000000 */
+/* вторичный цвет текста  rgba(0, 0, 0, 0.8); */
+/* белый #FFFFFF  */
+/* акцент #18A0FB */
+/* вторичный цвет фона #F5F5F5; */
+
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --title-text-color: #000000;
+  --accent-color: #18a0fb;
+  --primary-white-color: #ffffff;
+  --secondary-bg-color: #f5f5f5;
 }
 
-:root{
-    --accent-color: #FF6C00;
-    --main-font: Open Sans, sans-serif;
-    --second-font: Raleway, sans-serif;
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
 
+  font-family: Montserrat, sans-serif;
+  letter-spacing: -0.015em;
+  font-size: 18px;
+  line-height: 1.67;
 }
 
-.header{
-    background: #000;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: 2px solid tomato;
 }
 
-.logo{
-    background: #ffffff;
+/* Logo */
+
+.logo {
+  color: var(--title-text-color);
+  font-family: Comfortaa, cursive;
+
+  font-size: 28px;
+  line-height: 1.14;
+  text-decoration: none;
 }
 
-.navigation .list-link{
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.1em;
-    color: #FFFFFF;
-    text-decoration: none;
+.logo:hover {
+  color: var(--accent-color);
 }
 
-.navigation .list-link:hover{
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    color: var(--accent-color);
-    letter-spacing: 0.1em;
+/* Page header */
+
+.page-header {
 }
 
-.adr .phone{
-    display: inline-block;
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-decoration: none;
-    border: 1px solid transparent;
-    padding: 12px 20px;
-    text-align: center;
-    min-width: 160px;
+/* Site nav */
 
+.site-nav .link {
+  color: var(--accent-color);
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
 }
 
-.adr .phone:hover,
-.adr .phone:focus{
-    display: inline-block;
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 1px solid #FF6C00;
-    border-radius: 25px;
-    padding: 12px 20px;
-    text-align: center;
-    min-width: 160px;
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--title-text-color);
 }
 
-.subscribe-btn{
-    display: inline-block;
-    font-family: var(--main-font);
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-decoration: none;
-    border: 1px solid transparent;
-    padding: 12px 20px;
-    text-align: center;
-    min-width: 160px;
-
+.site-nav .link.current {
+  color: var(--title-text-color);
 }
 
-.subscribe-btn:hover,
-.subscribe-btn:focus{
-    display: inline-block;
-    font-family: var(--main-font);
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-decoration: none;
-    border: 1px solid #FF6C00;
-    border-radius: 25px;
-    padding: 12px 20px;
-    text-align: center;
-    min-width: 160px;
-
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-/* Герой */
- .hero{
-    background: #000; 
+/* Hero */
+
+.hero {
+  text-align: center;
 }
 
-.hero .hero-title{
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba(157, 164, 189, 0.6);
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.43;
 }
 
-/* какая-то тире перед нашим эллементом */
-.hero .hero-title::before{
-    content: '---';
-    color: red;
+/* Section */
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-.hero .hero-text{
-    font-family: var(--main-font);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
-    color: #9DA4BD;
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.hero .main-title{
-    font-family: var(--second-font);
-    font-weight: bold;
-    font-size: 72px;
-    line-height: 1.18;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
+.section-title {
+  margin-top: 0;
+  margin-bottom: 60px;
+
+  color: var(--title-text-color);
+
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.5;
 }
 
-/* about us */
-.about-us{
-    background: skyblue;
+.section-title.centered {
+  text-align: center;
 }
 
-.about-block-title{
-    font-family: var(--main-font);
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #303030;
+.section-description {
+  margin-top: 0;
+  margin-bottom: 80px;
+  font-size: 36px;
+  line-height: 1.39;
 }
 
-.about-block-main-title{
-    font-family: var(--second-font);
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.17;
-    letter-spacing: 0.05em;
-    color: #303030;
+/* Features и Examples */
+
+.feature-list .title,
+.work-list .title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
 }
 
-.about-text{
-    font-family: var(--main-font);
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    color: #555555;
+/* Works */
+
+.work-list > .item {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--primary-white-color);
 }
 
-.about-us .about-text-one{
-    font-size: 18px;
-    line-height: 1.67;
+.work-list > .item:nth-child(2n) {
+  background-color: var(--secondary-bg-color);
 }
 
-.about-us .about-text-second{
-    font-size: 14px;
-    line-height: 1.86;
+.feature-list p {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+/* Button */
+
+.button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 11px 34px;
+  min-width: 130px;
+
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button.secondary {
+  border-color: var(--accent-color);
+
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
+}
+
+/* Footer */
+
+.copyright {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.social > .label {
+  font-size: 15px;
+  line-height: 1.6;
 }

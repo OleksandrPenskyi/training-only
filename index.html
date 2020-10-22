@@ -1,232 +1,253 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BarberShop</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Photo app</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-
-  <!-- Разметка барбер шопа -->
   <body>
-    <header class="header">
-      <div class="logo"><img src="./pictures/logo.png" alt="logo"></div>
-      <nav class="navigation">
-        <ul class="list">
-          <li class="list-item"><a href="#" class="list-link">О нас</a></li>
-          <li class="list-item"><a href="#" class="list-link">Услуги и цены</a></li>
-          <li class="list-item"><a href="#" class="list-link">Мастера</a></li>
-          <li class="list-item"><a href="#" class="list-link">Контакты</a></li>
+    <!-- Шапка сайта -->
+    <header class="page-header">
+      <nav class="container">
+        <a href="./index.html" class="logo">
+          <img src="./images/logo.svg" alt="Логотип компании" />
+          photo
+        </a>
+
+        <ul class="site-nav list">
+          <li>
+            <a href="./compendium.html" class="link">Разбор конспекта</a>
+          </li>
+          <li><a href="" class="link current">Features</a></li>
+          <li><a href="" class="link">Pricing</a></li>
+          <li><a href="" class="link">Community</a></li>
+          <li><a href="" class="link">Support</a></li>
+        </ul>
+
+        <ul class="auth-nav list">
+          <li><a href="" class="button secondary">Log in</a></li>
+          <li><a href="" class="button primary">Register</a></li>
         </ul>
       </nav>
-
-      <address class="adr">
-        <a href="tel:+380441111111" class="phone">+38 044 111 11 11</a>
-      </address>
-
-      <a href="#" class="subscribe-btn">Онлайн запись</a>
     </header>
 
     <main>
+      <!-- Герой -->
       <section class="hero">
-        <p class="hero-title">A hair salon for men in Kyiv</p>
-        <h1 class="main-title">BarberShop</h1>
-        <p class="hero-text">
-          Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
-          вкусом.
-        </p>
+        <h1 class="hero-title">The largest community of photo enthusiasts</h1>
+        <a href="" class="button primary">Join today</a>
       </section>
 
-      <!-- о нас -->
-      <section class="about-us">
-        <ul>
-          <li>
-            <img src="./pictures/img1.jpg" alt="Мажет пеной" width="270" height="445">
-          </li>
-          <li>
-            <img src="./pictures/img2.jpg" alt="Бреет затылок" width="270" height="445" />
-          </li>
-        </ul>
-        <div class="about-block">
-          <p class="about-block-title">О НАС</p>
-          <h2 class="about-block-main-title">Лучший Барбершоп твоего города</h2>
-          <p class="about-text text-first">
-            Если ты хочешь добавить в свой образ больше уверенности – тебе точно
-            к нам.
-          </p>
-          <p class="about-text text-second">
-            Мы команда, которая никогда не останавливается на достигнутом и
-            жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
-            никогда не сможешь быть прежним. Мы команда, которая всегда с
-            клиентами "на одной волне". Поэтому, мы всегда готовы
-            усовершенствовать каждого, кто к нам приходит!
-          </p>
-          <a href="#" class="subscribe-btn">Онлайн запись</a>
-        </div>
-      </section>
-      <!-- Услуги цены -->
-      <section>
-        <span>Проведи время в компании лучших мастеров</span>
+      <!-- Преимущества -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">
+            Snap photos and share like <br />never before
+          </h2>
 
-        <h3>Услуги и цены</h3>
-        <ul>
-          <li>Мужская стрижка от 300 грн.</li>
-          <li>Стрижка бороды от 300 грн.</li>
-          <li>Стрижка усов от 300 грн.</li>
-          <li>Бритье опасной бритвой от 300 грн.</li>
-          <li>Мужская стрижка от 300 грн.</li>
-          <li>Стрижка бороды от 300 грн.</li>
-          <li>Стрижка усов от 300 грн.</li>
-          <li>Бритье опасной бритвой от 300 грн.</li>
-        </ul>
-
-        <a href="#">онлайн-запись</a>
-      </section>
-
-      <!-- Почему приходя к нам -->
-      <section>
-        <ul>
-          <li>200 <br />Lorem, ipsum.</li>
-          <li>200 <br />Lorem, ipsum.</li>
-          <li>200 <br />Lorem, ipsum.</li>
-          <li>200 <br />Lorem, ipsum.</li>
-        </ul>
-
-        <div>
-          <span>старая традиционная школа</span>
-          <h3>Почему приходят именно к нам?</h3>
-          <p>
-            О нас говорят только хорошее. Но лучше 1 раз увидеть и
-            прочувствовать, чем 10 раз прочитать.
-          </p>
+          <ul class="feature-list list">
+            <li>
+              <h3 class="title">Sed ut perspiciatis</h3>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est.
+              </p>
+              <a href="" class="button secondary">Learn more</a>
+            </li>
+            <li>
+              <h3 class="title">Lorem ipsum dolor</h3>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est.
+              </p>
+              <a href="" class="button secondary">Learn more</a>
+            </li>
+            <li>
+              <h3 class="title">Nemo enim ipsam</h3>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est.
+              </p>
+              <a href="" class="button secondary">Learn more</a>
+            </li>
+            <li>
+              <h3 class="title">Tempor incididunt</h3>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est.
+              </p>
+              <a href="" class="button secondary">Learn more</a>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <!-- Наши мастера -->
-      <section>
-        <span>для настоящих ценителей атмосферы</span>
-        <h3>Наши мастера</h3>
-        <ul>
-          <li>
-            <img
-              src="./pictures/photo1.jpg"
-              alt="John Smith"
-              width="370"
-              height="346"
-            />
-            <p>John Smith</p>
-            <p>Extreme Barber</p>
+      <!-- Примеры работ -->
+      <section class="section no-padding">
+        <div class="container">
+          <h2 class="section-title">Examples</h2>
 
-            <!-- значки юникода -->
-            <ul>
-              <li>&#9055;</li>
-              <li>&#9055;</li>
-              <li>&#9055;</li>
-              <li>&#9055;</li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./pictures/photo2.jpg"
-              alt="Michele Doe"
-              width="370"
-              height="346"
-            />
-            <p>Michele Doe</p>
-            <p>Extreme Barber</p>
-            <!-- значки юникода -->
-            <ul>
-              <li>&#9055;</li>
-              <li>&#9055;</li>
-              <li>&#9055;</li>
-              <li>&#9055;</li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./pictures/photo3.jpg"
-              alt="Alan Black"
-              width="370"
-              height="346"
-            />
-            <p>Alan Black</p>
-            <p>Extreme Barber</p>
-            <!-- значки юникода -->
-            <ul>
-              <li>&#9055;</li>
-              <li>&#9055;</li>
-              <li>&#9055;</li>
-              <li>&#9055;</li>
-            </ul>
-          </li>
-        </ul>
+          <ul class="work-list list">
+            <li class="item">
+              <img
+                src="./images/placeholder.png"
+                alt="Зимний лес"
+                width="750"
+              />
+              <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                dolorem.
+              </p>
+            </li>
+            <li class="item">
+              <img src="./images/placeholder.png" alt="Поле" width="750" />
+              <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                dolorem.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <!-- На латинском языке ДОДЕЛАТЬ-->
-      <section>
-        <span>На латинском языке “барба” означает “борода”</span>
-        <ul>
-          <li>
-            <img
-              src="./pictures/working1.jpg"
-              alt=""
-              width="270"
-              height="360"
-            />
-          </li>
-          <li>
-            <img
-              src="./pictures/working2.jpg"
-              alt=""
-              width="270"
-              height="360"
-            />
-          </li>
-          <li>
-            <img
-              src="./pictures/working3.jpg"
-              alt=""
-              width="270"
-              height="360"
-            />
-          </li>
-          <li>
-            <img
-              src="./pictures/working4.jpg"
-              alt=""
-              width="270"
-              height="360"
-            />
-          </li>
-        </ul>
+      <!-- Клиенты -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title centered">You’re in good company</h2>
+          <p class="section-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore
+          </p>
+
+          <ul class="list">
+            <li>
+              <a href=""
+                ><img src="./images/client.svg" alt="Логотип компании"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./images/client.svg" alt="Логотип компании"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./images/client.svg" alt="Логотип компании"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./images/client.svg" alt="Логотип компании"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./images/client.svg" alt="Логотип компании"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./images/client.svg" alt="Логотип компании"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./images/client.svg" alt="Логотип компании"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./images/client.svg" alt="Логотип компании"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Регистрация -->
+      <section class="section">
+        <div class="container">
+          <p class="section-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore
+          </p>
+
+          <div>
+            <a href="" class="button primary">Join Today</a>
+            <a href="" class="button secondary">Contact us</a>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <!-- онлайн запись -->
-      <section></section>
+    <!-- Футер -->
+    <footer class="page-footer">
+      <a href="./index.html" class="logo">
+        <img src="./images/logo.svg" alt="Логотип компании" />
+        photo
+      </a>
 
-      <!-- Контакты -->
       <section>
-        <address>
-          <a href="https://goo.gl/maps/4fN2dJfjmfYPF8mr8" target="_blank">ул. Васильковая, 7А
-          Киев, 08132</a>
-          <a href="tel"+380441111111">+38 044 111 11 11</a>
-          <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-        </address>
-      </section>
+        <h2>External links</h2>
 
-      <!-- Самый низ -->
-      <section>
-        <p>&#169; Copyright 2020</p>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Youtube</a></li>
+        <h3>Mobile app</h3>
+        <ul class="list">
+          <li><a href="">Features</a></li>
+          <li><a href="">Live share</a></li>
+          <li><a href="">Video record</a></li>
+        </ul>
+
+        <h3>Community</h3>
+        <ul class="list">
+          <li><a href="">Featured artists</a></li>
+          <li><a href="">The Portal</a></li>
+          <li><a href="">Live events</a></li>
+        </ul>
+
+        <h3>Company</h3>
+        <ul class="list">
+          <li><a href="">About us</a></li>
+          <li><a href="">Contact us</a></li>
+          <li><a href="">History</a></li>
         </ul>
       </section>
-    </footer> -->
+
+      <ul class="auth-nav list">
+        <li><a href="" class="button secondary">Register</a></li>
+        <li><a href="" class="button primary">Log in</a></li>
+      </ul>
+
+      <p class="copyright">&#169; Photo, Inc. 2019. We love our users!</p>
+
+      <div class="social">
+        <p class="label">Follow span:</p>
+
+        <ul class="list">
+          <li><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
+          <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
+          <li><a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
+          <li><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
