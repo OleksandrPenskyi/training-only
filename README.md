@@ -1,2 +1,2 @@
-# training-only
-For training
+# BarberShop
+At the lessons
